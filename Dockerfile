@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python2 \
     kmod \
     curl \
+    wget \
     pkg-config \
     ca-certificates \
     gcc-aarch64-linux-gnu \
@@ -24,7 +25,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     g++-arm-linux-gnueabihf \
     binutils-arm-linux-gnueabihf \
     zip \
-    vim # Optional, remove if u want
+    vim
 
 WORKDIR /workdir
 ENV ARCH=arm64
